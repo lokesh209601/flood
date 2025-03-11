@@ -1,41 +1,32 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: win-64
-
-ca-certificates=2020.10.14=0
-certifi=2020.6.20=py36_0
-chart-studio=1.1.0=py_0
-cython=0.29.22=py36he2d232f_0
-fbprophet=0.3.post2=py36_vc14_0
-flask=1.1.2=py_0
-hijri-converter=2.1.1=pyhd8ed1ab_0
-holidays=0.10.5.2=pyhd8ed1ab_0
-imbalanced-learn=0.5.0=py_0
-keras=2.3.1=py36h21ff451_0
-keras-applications=1.0.8=py_1
-keras-preprocessing=1.1.2=pyhd8ed1ab_0
-korean_lunar_calendar=0.2.1=pyh9f0ad1d_0
-matplotlib=3.2.2=1
-matplotlib-base=3.2.2=py36hfa737b6_1
-numpy=1.19.5=py36hd1b969e_1
-oauthlib=3.0.1=py_0
-openssl=1.1.1j=h8ffe710_0
-pandas=0.25.3=py36he350917_0
-pip=21.0.1=pyhd8ed1ab_0
-plotly=4.14.3=py_0
-python=3.6.13=h39d44d4_0_cpython
-python-dateutil=2.8.1=py_0
-python_abi=3.6=1_cp36m
-qt=5.12.9=hb2cf2c5_0
-requests=2.25.1=pyhd3deb0d_0
-requests-oauthlib=1.3.0=pyh9f0ad1d_0
-scikit-learn=0.20.0=py36heebcf9a_1
-scipy=1.5.3=py36h7ff6e69_0
-seaborn=0.11.0=py_0
-tensorboard=1.14.0=py36_0
-tensorboard-plugin-wit=1.8.0=pyh44b312d_0
-tensorflow=1.14.0=h39a9291_0
-tensorflow-base=1.14.0=py36h9f0ad1d_0
-tensorflow-estimator=1.14.0=py36h5ca1d4c_0
-werkzeug=1.0.1=py_0
-wheel=0.35.1=py_0
+name: updated_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scipy
+  - tensorflow=2.14
+  - keras
+  - flask
+  - requests
+  - requests-oauthlib
+  - oauthlib
+  - certifi
+  - ca-certificates
+  - werkzeug
+  - plotly
+  - chart-studio
+  - cython
+  - imbalanced-learn
+  - holidays
+  - hijri-converter
+  - korean_lunar_calendar
+  - tensorboard
+  - pip:
+      - fbprophet  # Prophet is now separate from Conda
